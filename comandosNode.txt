@@ -1,0 +1,15 @@
+--Crear base de datos
+
+CREATE DATABASE mi_primer_db;
+INSERT INTO personas (nombre, apellido, edad, email) VALUES ('Oswaldo', 'Tipan', 22, 'oswaldoj.tipan@gmail.com');
+DROP DATABASE 'nombre';
+SELECT * FROM personas ORDER BY nombre ASC;
+SELECT nombre, email FROM personas WHERE edad <30;
+ SELECT * FROM personas WHERE edad > 30;
+
+--Comandos de psgress
+ \l  => crea un lista de todas las bases de datos en mi servidor
+\! cls => limpiar terminal
+\c => cambiar de usuario
+\dt => quiero ver la tablas
+\d persona => indica la tabla de ese nombre
